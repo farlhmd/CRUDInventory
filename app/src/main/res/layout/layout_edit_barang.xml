@@ -13,6 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
+            android:fontFamily="@font/quicksand"
             android:hint="Nama Barang"
             android:singleLine="true" />
 
@@ -23,11 +24,13 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/merk_barang"
+            android:id="@+id/stok_barang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Merk Barang"
+            android:fontFamily="@font/quicksand"
+            android:hint="Stok Barang"
+            android:inputType="number"
             android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -41,6 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/quicksand"
             android:hint="Harga Barang"
             android:inputType="number"
             android:singleLine="true" />

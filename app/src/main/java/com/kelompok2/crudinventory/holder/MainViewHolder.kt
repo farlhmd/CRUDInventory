@@ -22,7 +22,7 @@ class MainViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     init {
         namaBarang = itemView.findViewById(R.id.nama_barang)
-        merkBarang = itemView.findViewById(R.id.merk_barang)
+        merkBarang = itemView.findViewById(R.id.stok_barang)
         hargaBarang = itemView.findViewById(R.id.harga_barang)
         view = itemView.findViewById(R.id.cvMain)
     }

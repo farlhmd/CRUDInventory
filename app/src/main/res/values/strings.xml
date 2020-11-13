@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CRUD Inventory</string>
+    <string name="stokTersedia">Stock Tersedia</string>
+    <string name="tambah_barang">Tambah Barang</string>
 </resources>

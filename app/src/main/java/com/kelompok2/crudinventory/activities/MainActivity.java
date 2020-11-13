@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.Fireb
     public void onDataClick(final ModelBarang barang, int position) {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Pilih Aksi");
+        builder.setTitle("Edit stock");
 
         builder.setPositiveButton("UPDATE", new DialogInterface.OnClickListener() {
             @Override
@@ -153,11 +153,11 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.Fireb
     private void dialogTambahBarang() {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Tambah Data ModelBarang");
+        builder.setTitle("Tambah Stock");
         View view = getLayoutInflater().inflate(R.layout.layout_edit_barang, null);
 
         mEditNama = view.findViewById(R.id.nama_barang);
-        mEditMerk = view.findViewById(R.id.merk_barang);
+        mEditMerk = view.findViewById(R.id.stok_barang);
         mEditHarga = view.findViewById(R.id.harga_barang);
         builder.setView(view);
 
@@ -189,15 +189,15 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.Fireb
 
     private void dialogUpdateBarang(final ModelBarang barang) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Edit Data ModelBarang");
+        builder.setTitle("Update stock");
         View view = getLayoutInflater().inflate(R.layout.layout_edit_barang, null);
 
         mEditNama = view.findViewById(R.id.nama_barang);
-        mEditMerk = view.findViewById(R.id.merk_barang);
+        mEditMerk = view.findViewById(R.id.stok_barang);
         mEditHarga = view.findViewById(R.id.harga_barang);
 
         mEditNama.setText(barang.getNama());
-        mEditMerk.setText(barang.getMerk());
+        mEditMerk.setText(barang.getStok());
         mEditHarga.setText(barang.getHarga());
         builder.setView(view);
 
@@ -206,7 +206,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.Fireb
                 @Override
                 public void onClick(DialogInterface dialog, int id) {
                     barang.setNama(mEditNama.getText().toString());
-                    barang.setMerk(mEditMerk.getText().toString());
+                    barang.setStok(mEditMerk.getText().toString());
                     barang.setHarga(mEditHarga.getText().toString());
                     updateDataBarang(barang);
                 }
