@@ -47,17 +47,8 @@
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
-                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                    android:id="@+id/logout"
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:theme="@style/MaterialTheme"
-                    app:backgroundTint="@color/ButtonEnabled"
-                    app:icon="@drawable/ic_exit_to_app_black_24dp"
-                    app:iconTint="@android:color/white"
-                    app:iconSize="24dp"/>
+
+
 
             </RelativeLayout>
 
@@ -79,6 +70,18 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     </ScrollView>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/logout"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="32dp"
+        android:theme="@style/MaterialTheme"
+        app:backgroundTint="@color/ButtonEnabled"
+        app:icon="@drawable/ic_exit_to_app_black_24dp"
+        app:iconTint="@android:color/white"
+        app:iconSize="24dp"/>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/tambah_barang"
@@ -89,6 +92,7 @@
         android:layout_marginVertical="36dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/quicksand_bold"
         android:text="Tambah Barang"
         android:textColor="@android:color/white"
