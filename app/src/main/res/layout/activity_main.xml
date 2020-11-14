@@ -6,25 +6,6 @@
 
     android:orientation="vertical">
 
-    <!--
-            didalam tag relative layout tambahin :
-            android:orientation="vertical"
-
-            terus, hapus tag textview ini
-
-            <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    -->
-
-    <!--
-           Copas codingan ini:
-    -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="240dp"
@@ -62,10 +43,21 @@
                     android:background="@drawable/border"
                     android:fontFamily="@font/quicksand_bold"
                     android:padding="8dp"
-                    android:text="@string/stokTersedia"
+                    android:text="Stok Tersedia"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/logout"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:theme="@style/MaterialTheme"
+                    app:backgroundTint="@color/ButtonEnabled"
+                    app:icon="@drawable/ic_exit_to_app_black_24dp"
+                    app:iconTint="@android:color/white"
+                    app:iconSize="24dp"/>
 
             </RelativeLayout>
 
@@ -98,12 +90,30 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/quicksand_bold"
-        android:text="@string/tambah_barang"
+        android:text="Tambah Barang"
         android:textColor="@android:color/white"
         android:textSize="12sp"
         android:theme="@style/MaterialTheme"
-        app:backgroundTint="@color/colorAccent"
+        app:backgroundTint="@color/ButtonEnabled"
         app:icon="@drawable/ic_add"
+        app:iconTint="@android:color/white" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Chat"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:theme="@style/MaterialTheme"
+        app:backgroundTint="@color/ButtonEnabled"
+        app:icon="@drawable/ic_chat"
         app:iconTint="@android:color/white" />
 
 

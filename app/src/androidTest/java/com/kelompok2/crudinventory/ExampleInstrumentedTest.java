@@ -1,9 +1,8 @@
-package com.kelompok2.crudinventory;
+package com.alfianyusufabdullah.chatyuk;
 
 import android.content.Context;
-
-import androidx.test.platform.app.InstrumentationRegistry;
-import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.InstrumentationRegistry;
+import androidx.test.runner.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,9 +17,10 @@ import static org.junit.Assert.*;
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
     @Test
-    public void useAppContext() {
+    public void useAppContext() throws Exception {
         // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.kelompok2.crudinventory", appContext.getPackageName());
+        Context appContext = InstrumentationRegistry.getTargetContext();
+
+        assertEquals("com.alfianyusufabdullah.chatyuk", appContext.getPackageName());
     }
 }
