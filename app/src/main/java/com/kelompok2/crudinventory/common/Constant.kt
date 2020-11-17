@@ -1,9 +1,7 @@
 package com.kelompok2.crudinventory.common
 
-import android.util.Patterns
 import java.text.SimpleDateFormat
 import java.util.*
-
 
 
 object Constant {

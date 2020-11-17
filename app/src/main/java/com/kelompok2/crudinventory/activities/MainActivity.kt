@@ -115,10 +115,6 @@ class MainActivity : AppCompatActivity(), MainAdapter.FirebaseDataListener {
 
     }
 
-    private fun goToChat() {
-        val intent = Intent(this, ChatRoomActivity::class.java)
-        startActivity(intent)
-    }
 
     // function untuk crud data
     override fun onDataClick(barang: ModelBarang?, position: Int) {
@@ -196,6 +192,10 @@ class MainActivity : AppCompatActivity(), MainAdapter.FirebaseDataListener {
             mDatabaseReference!!.child("data_barang").child(barang!!.key!!)
                     .removeValue().addOnSuccessListener { Toast.makeText(this@MainActivity, "Data berhasil di hapus !", Toast.LENGTH_LONG).show() }
         }
+    }
+    private fun goToChat() {
+        val intent = Intent(this, ChatRoomActivity::class.java)
+        startActivity(intent)
     }
 
     companion object {
