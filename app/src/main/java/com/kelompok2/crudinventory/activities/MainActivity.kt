@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity(), MainAdapter.FirebaseDataListener {
     // function untuk crud data
     override fun onDataClick(barang: ModelBarang?, position: Int) {
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Edit stock")
+        builder.setTitle("Edit Psikolog")
         builder.setPositiveButton("UPDATE") { dialog, id -> dialogUpdateBarang(barang) }
         builder.setNegativeButton("HAPUS") { dialog, id -> hapusDataBarang(barang) }
         builder.setNeutralButton("BATAL") { dialog, id -> dialog.dismiss() }
@@ -130,7 +130,7 @@ class MainActivity : AppCompatActivity(), MainAdapter.FirebaseDataListener {
     // declare logika tambah barang
     private fun dialogTambahBarang() {
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Tambah Stock")
+        builder.setTitle("Tambah Psikolog")
         val view = layoutInflater.inflate(R.layout.layout_edit_barang, null)
         mEditNama = view.findViewById(R.id.nama_barang)
         mEditMerk = view.findViewById(R.id.stok_barang)
@@ -154,7 +154,7 @@ class MainActivity : AppCompatActivity(), MainAdapter.FirebaseDataListener {
     // declare logika update stock
     private fun dialogUpdateBarang(barang: ModelBarang?) {
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Update stock")
+        builder.setTitle("Update Psikolog")
         val view = layoutInflater.inflate(R.layout.layout_edit_barang, null)
         mEditNama = view.findViewById(R.id.nama_barang)
         mEditMerk = view.findViewById(R.id.stok_barang)

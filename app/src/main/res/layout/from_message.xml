@@ -18,7 +18,7 @@
             android:id="@+id/icon_fb1"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logooo" />
 
         <TextView
             android:id="@+id/fromUsername"
